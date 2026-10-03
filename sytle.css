@@ -295,3 +295,11 @@ FEATURES
   text-decoration: line-through;
   padding-right: 8px;
 }
+
+/* 
+LATEST
+ */
+
+#latest .books{
+  flex-wrap: wrap;
+}
