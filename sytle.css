@@ -21,7 +21,7 @@ img {
   width: 100%;
   height: 100%;
   max-height: 50vh;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 p {
@@ -203,9 +203,7 @@ HIGHLIGHTS
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
-  /* padding: 20px 0; */
-  /* margin: 0 auto 16px auto; */
-  /* align-items: center; */
+  cursor: not-allowed;
 }
 
 .highlight:hover 
@@ -220,6 +218,7 @@ HIGHLIGHTS
   font-weight: bold;
   color: #7342d6;
   margin-bottom: 16px;
+  cursor: not-allowed;
 }
 
 .highlight:hover .highlight__subtitle {
@@ -238,7 +237,7 @@ FEATURES
 */
 
 #features {
-  height: 1000px;
+  padding-top: 8vw;
   background-color: rgba(7, 251, 239, 0.1);
 }
 
@@ -247,9 +246,52 @@ FEATURES
 }
 
 .book {
+  text-align: center;
   width: 25%;
+  padding: 24px;
 }
 
 .book__img {
   max-height: 300px;
+  transition: all 300ms ease;
+  cursor: not-allowed;
+}
+
+.book__img--wrapper {
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  /* padding: 20px; */
+  box-shadow: 0px 0px 8px #7342d6;
+}
+
+.book:hover .book__img {
+  transform: scale(1.05);
+}
+
+.book__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7342d6;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.book__title:hover {
+  color: #16aaea;
+  text-decoration: underline;
+  transition: ease-in-out 200ms;
+  cursor: not-allowed;
+}
+
+.book__ratings {
+  color: #fabf2a;
+  margin-bottom: 8px;
+}
+
+.book__price--normal {
+  color: #03030379;
+  text-decoration: line-through;
+  padding-right: 8px;
 }
