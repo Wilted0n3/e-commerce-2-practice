@@ -298,6 +298,10 @@ FEATURES
 }
 
 /* 
-LATEST
+EXPLORE MORE BOOKS
  */
 
+#explore {
+  background-color: rgba(7, 251, 239, 0.1);
+  text-align: center;
+}
